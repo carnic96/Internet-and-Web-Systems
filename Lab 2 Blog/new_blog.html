@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		aside.one{
+			float: right;
+			position: absolute;
+			top: 53cm;
+			margin: 0 150%;
+			width: 18%;	
+			font-family: Consolas, monaco, monospace;
+		}
+
+		aside.two{
+			float: right;
+			position: absolute;
+			top: 48.2cm;
+			margin: 0 150%;
+			width: 18%;	
+			font-family: Consolas, monaco, monospace;
+		}
+
+		aside.three{
+			float: right;
+			position: absolute;
+			top: 53cm;
+			margin: 0 128%;
+			width: 18%;	
+			font-family: Consolas, monaco, monospace;
+		}
+
+		article{
+
+			font-family: Consolas, monaco, monospace;
+		}
+
+		body.one {
+		    margin: 0.7cm 0.7cm 0.7cm 0.7cm;
+		}
+
+		section.two {
+		    background-image: url("/Users/deone/Downloads/08cba2917e055213015690bf1a3ef0f4--tumblr-minimalist-bedroom-simplistic-bedroom-minimalist (1).jpg");
+		    background-repeat: no-repeat;
+		    background-size: 100% 100%;
+		    background-color: #cccccc;
+		    
+		    height: 10cm;
+		    margin: 5cm;
+		    width: 60%;
+		    padding: 2px;
+		    
+		}		
+		p {
+			font-family: Papyrus, fantasy;
+			font-size: 17px;
+			font-style: normal;
+			font-variant: bold;
+			font-weight: 500;
+			line-height: 20px;
+		}
+
+
+		h1 {
+			font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+			font-size: 54px;
+			font-style: normal;
+			font-variant: bold;
+			font-weight: 500;
+			line-height: 26px;
+		}
+
+		h2 {
+			font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+			font-size: 30px;
+			font-style: normal;
+			font-variant: bold;
+			font-weight: 500;
+			line-height: 10px;
+			margin: auto;
+			position: absolute;
+			top: 39cm;
+
+		}
+
+		section:nth-child(n+1) {
+			    width: 300px;
+			    border: 25px;
+			    padding: 60px;
+			    margin: auto;
+			    padding-top: 10px;
+			    float: right;
+
+		}
+		
+		section:nth-child(n+2){
+			    width: 300px;
+			    border: 25px;
+			    padding: 80px;
+			    margin: auto;
+			    padding-top: 10px;
+			    float: center;
+		}
+
+		section:nth-child(n+3) {
+			    width: 300px;
+			    border: 25px;
+			    padding: 80px;
+			    margin: auto;
+			    float: left;
+		}
+
+		nav
+		{
+			margin: 70px;
+			font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+			font-size: 24px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 500;
+			line-height: 26px;
+			text-align:center;
+			color: red;
+			
+		}	
+
+		#nav a{
+		     color: #000000;
+		     text-decoration:none;
+		}
+
+		h3 {
+			font-family: Consolas, monaco, monospace;
+			font-size: 18px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 500;
+			line-height: 15px;
+		}
+
+		h4 {
+
+			font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';;
+			font-size: 15px;
+			font-style: normal;
+			font-variant: bold;
+			font-weight: 500;
+			line-height: 15px;
+		}
+	
+
+		img {
+		    opacity: 0.7;
+		    
+	    	}
+
+	    .images
+		{
+			display: inline;
+			margin: 48px;
+			padding: 10px;
+			width: 9cm;
+		    height: 10cm;
+		    padding-top: 55px;
+		    padding-bottom: 15px;
+		}
+
+		div.polaroid {
+			margin: auto;
+		  width:46%;
+		  background-color: white;
+		  box-shadow: 0 14px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+		  margin-bottom: 20px;
+		}
+
+		div.container {
+		  text-align: center;
+		  padding: 10px 10px;
+		}
+
+		.contains {
+			position: absolute;
+			top: 20%;
+    		width: 55%;
+		}
+
+		.image {
+		  opacity: 0.8;
+		  display: block;
+		  width: 100%;
+		  height: 150px;
+		  transition: .5s ease;
+		  backface-visibility: hidden;
+		}
+
+		.middle {
+		  transition: .5s ease;
+		  opacity: 0;
+		  position: absolute;
+		  top: 10%;
+		  left: 90%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%)
+		}
+
+		.contains:hover .image {
+		  opacity: 0.3;
+		}
+
+		.contains:hover .middle {
+		  opacity: 0.7;
+		}
+
+		.text {
+		  background-color: #BBABB6;
+		  color: white;
+		  font-size: 16px;
+		  padding: 16px 32px;
+		}
+
+
+		footer {
+			float: left;
+			clear: both;
+		    position: relative;
+		    z-index: 10;
+		    height: 3em;
+		    margin-top: 12em;		
+		}
+
+	</style>
+	<title>
+		Dorm Decor
+	</title>
+
+	<h1 style="text-align:center; color:rgb(66, 63, 66  );">| DORM DECOR |</h1>
+	<h3 style="text-align:center; color:rgb(66, 63, 66  );">F o r &nbsp A &nbsp  C l a s s y &nbsp L i f e s t y l e</h3>
+
+
+	<nav style="color:rgb(141, 127, 136);">
+		<a style="color:rgb(85, 83, 85  );" href="">HOME</a>&nbsp&nbsp |&nbsp&nbsp
+		<a style="color:rgb(85, 83, 85  );" href="">LIFESTYLE</a> &nbsp&nbsp|&nbsp&nbsp
+		<a style="color:rgb(85, 83, 85  );" href="">ESSENTIALS</a> &nbsp&nbsp|&nbsp&nbsp
+		<a style="color:rgb(85, 83, 85  );" href="">TRAVEL</a>
+	</nav>
+		<div class="polaroid">
+			<img src="/08cba2917e055213015690bf1a3ef0f4--tumblr-minimalist-bedroom-simplistic-bedroom-minimalist (1).jpg" alt="Norway">
+			<div class="container">
+				
+					<header style="text-align:center;">
+						<h3 class="new" style="font-size:260%; color: rgb(66, 63, 66  );">Pinterest Style</h3>
+					</header>
+				
+			</div>
+		</div>
+
+
+</head>
+
+<body class="one" style= "background-color:rgb(249, 244, 249 );">
+		
+		  	<div id="content">
+			    <img src="/img1.jpg" alt="Georges" class="images" />
+			    <img src="/img2.jpg" alt="Gers" class="images" />
+			    <img src="/img3.jpg" alt="Providence" class="images" />
+			</div>
+
+	<section>
+			<h2 style="color:rgb(120, 101, 116  );">ESSENTIALs</h2>
+		<article style="color:rgb(127, 121, 125); font-size:110%;">
+			When it comes to making a room pretty, it becomes highly important to have some products that will not just be useful, but also make your room look neat. For example, using containers to store things, instead of arranging them in a random order. 
+		</article>
+	</section>
+
+	<section>
+		<header>
+			<h2 style="color:rgb(120, 101, 116  );">DIYs</h2>
+		</header>
+		<article style="color:rgb(127, 121, 125); font-size:110%;">
+			Do It Yourself, or DIY is one of the most inexpensive way to make a room beautiful with your own touch. The idea is to design something according to your style and liking. Not only is it a way to add a little something to your place, but also a fun activity. 
+			The best D.I.Y. home decor projects deliver a satisfying "I did it!" payoff in an afternoon, or better yet, an hour.
+		</article><br>
+	</section>
+
+	<section>
+		<header>
+			<h2 style="color:rgb(120, 101, 116  );">TIPs AND TRICKs</h2>
+		</header>
+		<article style="color:rgb(127, 121, 125); font-size:110%;">
+			With the little space provided in the dorms, one needs to smartly utilise every bit of the space provided. 
+		</article><br><br><br><br><br><br><br><br><br>
+	</section>
+
+		<div class="contains">
+			<aside class="one" style="vertical-align:middle">
+				<img src="/img10.jpg" class="image" height= "90" width= "115"/>
+				<div class="middle">
+					<div class="text">Dorm Move-In Haul</div>
+				<a href="https://blog.hubspot.com/marketing/how-to-write-blog-post-simple-formula-ht" style="font-size:110%; color:rgb(117, 132, 134  );"></a><br>
+				</div>
+			</aside>
+		</div>
+
+		<div class="contains">
+			<aside class="two" style="vertical-align:middle">
+				<img src="/img7.jpg" class="image" height= "90" width= "115"/>
+				<div class="middle">
+					<div class="text">Successful Settling</div>
+				<a href="https://blog.hubspot.com/marketing/how-to-write-blog-post-simple-formula-ht" style="font-size:110%; color:rgb(117, 132, 134  );"></a><br>
+				</div>
+			</aside>
+		</div>
+
+		<div class="contains">
+			<aside class="three" style="vertical-align:middle">
+				<img src="/img4.jpg" class="image" height= "90" width= "115"/>
+				<div class="middle">
+					<div class="text">Fashion Insider</div>
+				<a href="https://blog.hubspot.com/marketing/how-to-write-blog-post-simple-formula-ht" style="font-size:110%; color:rgb(117, 132, 134  );"></a><br>
+				</div>
+			</aside>
+		</div>
+
+
+
+
+	<footer>
+		<address style="font-size: 104%; color: rgb(66, 63, 66  );">
+			Written by <a href="carnic96@example.com" style="font-size:110%; color:rgb(66, 63, 66  );">Carnic</a><br> 
+			SNU<br>
+			INDIA
+		</address>
+	</footer>
+	<br><br><br>
+​
+
+</body>
+</html>
+​
