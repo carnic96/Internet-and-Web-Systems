@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+
+		aside.one{
+			position: absolute;
+			top: 22px;
+			margin-left: 93.5%;
+		}
+		aside.two{
+			float: left;
+			padding-bottom: 6%;
+			padding-right: 0.5%;
+		}
+
+		aside.three{
+			position: absolute;
+			top: 67%;
+			margin-left: 83%;
+			float: right;
+			font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+			font-weight: 500;
+			color: #305270;
+			font-size: 20px;
+		}
+
+		footer{
+			position: relative;
+			z-index: 20;
+		    height: 3em;
+		    margin-top: 100em;
+		    margin-left: 24%;
+		    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+			font-weight: 500;
+			color: #305270;
+			font-size: 20px;
+		}
+
+		.dropbtn {
+		    background-color: #6F8294;
+		    color: white;
+		    width: 170px;
+		    padding: 16px;
+		    font-size: 16px;
+		    border: none;
+		    cursor: pointer;
+		}
+
+		.dropdown1 {
+		    position: absolute;
+		    margin-left: 35.5%;
+		    display: inline-block;
+		}
+
+		.dropdown2 {
+		    position: absolute;
+		    margin-left: 50.5%;
+		    display: inline-block;
+		}
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #6F8294;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #255885}
+
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+		    background-color: #757083;
+		}
+
+		input[type=text] {
+		    width: 390px;
+		    box-sizing: border-box;
+		    border: 2px solid #E9E6F2  ;
+		    border-radius: 4px;
+		    font-size: 16px;
+		    background-color: #E9E6F2  ;
+		    background-image: url('searchicon.png');
+		    background-position: 10px 10px; 
+		    background-repeat: no-repeat;
+		    padding: 12px 20px 12px 40px;
+		    position: absolute;
+		    top: 30%;
+		    margin-left: 36%;
+
+		}
+		h1{
+			font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+			font-weight: 500;
+			color: #255885;
+			padding: 1%;
+			font-size: 97px;	
+
+		}
+
+		h2{
+			font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+			font-weight: 500;
+			color: #305270;
+			font-size: 37px;
+			position: absolute;
+			top: 1px;	
+
+		}
+
+		.images
+		{
+			display: inline;
+			opacity: 0.6;
+			margin: 48px;
+			padding: 4px;
+			width: 8cm;
+		    height: 7cm;
+		    padding-top: 55px;
+		    padding-bottom: 15px;
+		}
+
+		button.accordion {
+			margin-left: 10%;
+		    background-color: #6F8294;
+		    color: #EBF1F7;
+		    cursor: pointer;
+		    padding: 18px;
+		    width: 4cm;
+		    border: none;
+		    text-align: center;
+		    outline: none;
+		    font-size: 15px;
+		    transition: 0.4s;
+
+		}
+
+		button.accordion.active, button.accordion:hover {
+		    background-color: #9EABB7;
+		    color: #000000;
+		}
+
+		div.panel {
+		    padding: 0 18px;  
+		    background-color: #F9F9F9;
+		    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+			font-weight: 500;
+			color: #305270;
+			font-size: 20px;
+		    max-height: 0;
+		    overflow: hidden;
+		    transition: max-height 0.2s ease-out;
+		}
+
+		section:nth-child(n+1) {
+		    width: 200px;
+		    border: 25px;
+		    padding: 60px;
+		    margin: auto;
+		    padding-top: 10px;
+		    float: right;
+
+		}
+		
+		section:nth-child(n+2){
+		    width: 200px;
+		    border: 25px;
+		    padding: 80px;
+		    margin: auto;
+		    padding-top: 10px;
+		    float: center;
+		}
+
+		section:nth-child(n) {
+		    width: 200px;
+		    border: 25px;
+		    padding: 80px;
+		    margin: auto;
+		    float: left;
+		}
+		
+
+	</style>
+	<title>
+		Craigslist
+	</title>
+
+</head>
+
+<body class="one" style= "background-color:rgb(249, 249, 249);">
+
+	<header>
+			<h2>
+				<img src="https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/images/whitakergroupgooglelocationicon.png/" width="37px" height="50px">
+				Delhi
+			</h2>
+
+			<br><h1 style="text-align: center;">craigslist</h1>
+
+			<br><aside class="two">
+				<form>
+				  <input type="text" name="search" placeholder="Search..">
+				</form>
+			</aside>
+
+			<aside class="one">
+				<a href=""><img src="https://eggfundraising.com/wp-content/uploads/2016/05/my-account-login-icon-300x300.png" width="70px" height="70px" ></a>
+			</aside>
+			<div class="dropdown1">
+			  <button class="dropbtn">Change Country</button>
+			  <div class="dropdown-content">
+			    <a href="#">Mumbai</a>
+			    <a href="#">Jaipur</a>
+			    <a href="#">Pune</a>
+			  </div>
+			</div>
+			<div class="dropdown2">
+			  <button class="dropbtn">Change City</button>
+			  <div class="dropdown-content">
+			    <a href="#">Australia</a>
+			    <a href="#">UK</a>
+			    <a href="#">USA</a>
+			  </div>
+			</div>
+	</header>
+
+<article>
+	
+	<section>
+		<img src="http://www.starpropertiesindia.com/blog/wp-content/uploads/2016/09/Housing.jpg" class="images">
+		<button class="accordion">HOUSING</button>
+		<div class="panel" align="left">
+		  <a href="" style="color: rgb(48, 82, 112);">apts / housing</a><br>
+		  <a href="" style="color: rgb(48, 82, 112);">housing swap</a><br>
+		  <a href="" style="color: rgb(48, 82, 112);">housing wanted</a><br>
+		  <a href="" style="color: rgb(48, 82, 112);">office / commercial</a><br>
+		  <a href="" style="color: rgb(48, 82, 112);">rooms / shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQepvu2Tr5ihS0kvhVPwGbvpe9riuRPCmwoZWcRT1PmKLk2JdfI_w" class="images">
+		<button class="accordion">JOBS</button>
+		<div class="panel">
+		  <br><a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="http://www.impublications.com/sites/default/files/community.jpg" class="images">
+		<button class="accordion">COMMUNITY</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+	
+	<section>
+		<img src="http://premierpreownedgametrucks.com/wp-content/uploads/2016/12/For-Sale-Blue.png" class="images">
+		<button class="accordion">FOR SALE</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>	
+
+	<section>
+		<img src="http://www.starwebcreations.com/new_images/services.jpg" class="images">
+		<button class="accordion">SERVICES</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1LWGU_Lo6wYcRgYVyAaQ2xqS2LIjAxCue6msnds-rBGQXU22r" class="images">
+		<button class="accordion">DISCUSSION FORUMS</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="http://media.istockphoto.com/vectors/resume-job-interview-concept-writing-a-resume-vector-id494163202?k=6&m=494163202&s=612x612&w=0&h=FRKf10UCctA0t0T3VGELHX4o8GJf9w-Y67cxjGySuJM=" class="images">
+		<button class="accordion">RESUMES</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJE_8L35z8QfEwz6rqM6qsrkkO_-1h--zlXnNU7NSMwWalRJV4" class="images">
+		<button class="accordion">GIGS</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+
+	<section>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA5pXQ4v93aZ4e2GkcEWnlfZDKIow7eTxlZOKYDFC0ZXDKRzTa" class="images">
+		<button class="accordion">PERSONALS</button>
+		<div class="panel">
+		  <a href="">apts/housing</a><br>
+		  <a href="">housing swap</a><br>
+		  <a href="">housing wanted</a><br>
+		  <a href="">office/commercial</a><br>
+		  <a href="">rooms/shared</a><br>
+		</div>
+	</section>
+	
+</article>
+	
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].onclick = function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight){
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    } 
+			  }
+			}
+		</script>
+
+
+	<aside class="three">
+		<a href="" style="color: rgb(48, 82, 112);">Help FAQs Abuse Legal</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Avoid Scams and Fraud</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Personal Safety Tips</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Terms of Use</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Privacy Policy</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">System Status</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">About Craigslist</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Craigslist Open Source</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Craigslist Blog</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Best-of-Craigslist</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Craigslist TV</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">"Craigslist Joe"</a><br><br>
+		<a href="" style="color: rgb(48, 82, 112);">Craig Connects</a><br><br>
+	</aside>
+
+	<footer>
+		<a href="" style="color: rgb(48, 82, 112);">@ Craigslist</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Help</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Safety</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Privacy</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Feedback</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Terms</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Cl Jobs</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">About</a> | 
+		<a href="" style="color: rgb(48, 82, 112);">Mobile</a>
+	</footer>
+	
+</body>
+</html>
+​
